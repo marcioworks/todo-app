@@ -1,11 +1,12 @@
 import 'modules/bootstrap/dist/css/bootstrap.min.css'
 import 'modules/font-awesome/css/font-awesome.min.css'
-import Menu from '../templates/menu'
 
 import React from 'react'
-
+import Menu from '../templates/menu'
+import Routes from '../main/routes'
 export default props => (
     <div className="container">
        <Menu />
+       <Routes/>
     </div>
 )
