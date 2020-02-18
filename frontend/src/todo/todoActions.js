@@ -29,3 +29,10 @@ export const markAsDone = todo => {
             .then(resp => dispatch(search()))
     }
 }
+
+export const markAsPending = todo => {
+    return dispatch => {
+        axios.put(`${URL}/${todo._id}`, { ...todo, done: false })
+            .then(resp => dispatch(search()))
+    }
+}
